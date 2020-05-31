@@ -9,7 +9,20 @@
 $ composer require sjacobi/vega
 ```
 
-##### После установки пакета - применить миграции
+##### После установки нужно зарегистрировать сервис провайдер пакета
+
+в app/config/app.php
+
+```php
+<?php
+return [
+    'providers' => [
+        \SergeyJacobi\Vega\Providers\VegaServiceProvider::class    
+    ]
+];
+```
+
+##### После регистрации провайдера - применить миграции
 ```bash
 $ php artisan migrate
 ```
