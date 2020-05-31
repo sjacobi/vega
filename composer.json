@@ -1,0 +1,15 @@
+{
+    "name": "sjacobi/vega",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sergeyjacobi",
+            "email": "sergeyjacobi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"SergeyJacobi\\Vega\\": "src/app/"}
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
